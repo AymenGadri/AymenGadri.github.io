@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js">
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){   
+   $("#myVideo").bind('ended', function(){
+      location.href="chapitre2.html";   
+   }); 
+  });
+</script>
+
+<video id="myVideo" width="320" height="240" controls="controls">
+  <source src="trip1.webm" type="video/webm" />
+  <source src="trip1.ogg" type="video/ogg" />
+    Your browser does not support the video tag.
+</video>
